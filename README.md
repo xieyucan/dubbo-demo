@@ -9,3 +9,4 @@
    docker run -d --restart=always --name nacos -e MODE=standalone -p 8848:8848 --privileged=true nacos/nacos-server:2.0.0
    ```
 4. 然后用就行，运行测试结果如下：
+![image](https://user-images.githubusercontent.com/20358819/128167746-c068f320-1f08-4e78-9574-4ff951f3a29b.png)
