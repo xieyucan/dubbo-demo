@@ -1,4 +1,4 @@
-package com.xh.demo.dubbo.api.dto;
+package com.xh.demo.dubbo.dto;
 
 import java.io.Serializable;
 

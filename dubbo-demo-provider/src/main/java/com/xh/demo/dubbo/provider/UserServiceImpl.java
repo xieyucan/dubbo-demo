@@ -1,7 +1,7 @@
 package com.xh.demo.dubbo.provider;
 
-import com.xh.demo.dubbo.api.api.UserService;
-import com.xh.demo.dubbo.api.dto.User;
+import com.xh.demo.dubbo.api.UserService;
+import com.xh.demo.dubbo.dto.User;
 import org.apache.dubbo.config.annotation.Service;
 
 /**
@@ -18,6 +18,14 @@ public class UserServiceImpl implements UserService {
         User user = new User();
         user.setId(userId);
         user.setUsername("宋茜");
+        return user;
+    }
+
+    @Override
+    public User findUserByName(String username) {
+        User user = new User();
+        user.setId(666L);
+        user.setUsername(username);
         return user;
     }
 }

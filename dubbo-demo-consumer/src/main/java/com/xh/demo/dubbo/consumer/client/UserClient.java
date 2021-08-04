@@ -1,7 +1,7 @@
 package com.xh.demo.dubbo.consumer.client;
 
-import com.xh.demo.dubbo.api.api.UserService;
-import com.xh.demo.dubbo.api.dto.User;
+import com.xh.demo.dubbo.api.UserService;
+import com.xh.demo.dubbo.dto.User;
 import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.stereotype.Service;
 

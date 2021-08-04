@@ -1,6 +1,6 @@
-package com.xh.demo.dubbo.api.api;
+package com.xh.demo.dubbo.api;
 
-import com.xh.demo.dubbo.api.dto.User;
+import com.xh.demo.dubbo.dto.User;
 
 /**
  * TODO
@@ -11,4 +11,6 @@ import com.xh.demo.dubbo.api.dto.User;
 public interface UserService {
 
     User findUserById(Long userId);
+
+    User findUserByName(String username);
 }

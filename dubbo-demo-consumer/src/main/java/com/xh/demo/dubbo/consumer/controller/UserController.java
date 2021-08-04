@@ -1,8 +1,7 @@
 package com.xh.demo.dubbo.consumer.controller;
 
-import com.xh.demo.dubbo.api.dto.User;
 import com.xh.demo.dubbo.consumer.client.UserClient;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.xh.demo.dubbo.dto.User;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,7 +20,7 @@ public class UserController {
     private UserClient userClient;
 
     @GetMapping("/findByUserId")
-    public User findByUserId(Long id){
+    public User findByUserId(Long id) {
         User userById = userClient.findUserById(id);
         return userById;
     }
