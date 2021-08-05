@@ -62,22 +62,22 @@
             <version>1.0.2</version>
         </dependency>
 
-        <!--
-          sentinel dubbo 版本 Apache Dubbo 2.7.x 及以上版本
-          sentinel-apache-dubbo-adapter
-           对于Dubbo 2.6.x 及以下版本 sentinel-dubbo-adapter
-         -->
         <dependency>
-            <groupId>com.alibaba.csp</groupId>
-            <artifactId>sentinel-apache-dubbo-adapter</artifactId>
-            <version>1.6.3</version>
+            <groupId>org.apache.zookeeper</groupId>
+            <artifactId>zookeeper</artifactId>
+            <version>3.4.12</version>
         </dependency>
 
-        <!--使用sentinel dashboard导入-->
         <dependency>
-            <groupId>com.alibaba.csp</groupId>
-            <artifactId>sentinel-transport-simple-http</artifactId>
-            <version>1.6.3</version>
+            <groupId>com.github.sgroschupf</groupId>
+            <artifactId>zkclient</artifactId>
+            <version>0.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.curator</groupId>
+            <artifactId>curator-recipes</artifactId>
+            <version>2.12.0</version>
         </dependency>
     </dependencies>
 
