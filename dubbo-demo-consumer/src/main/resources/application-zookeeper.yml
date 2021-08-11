@@ -1,6 +1,11 @@
 dubbo:
+  config-center:
+    address: zookeeper://zk01.soa.internal.weimobdev.com:2181
   registry:
-    address: zookeeper://127.0.0.1:2181
+    address: zookeeper://zk01.soa.internal.weimobdev.com:2181
+    check: false
+  protocol:
+    name: dubbo
   application:
     name: dubbo-consumer
 

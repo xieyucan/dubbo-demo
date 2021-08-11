@@ -1,8 +1,14 @@
 server:
-  port: 8082
+  port: 0
 
 spring:
   application:
     name: dubbo-provider
   profiles:
-    active: nacos
+    active: zookeeper
+
+dubbo:
+  application:
+    name: dubbo-provider
+  protocol:
+    port: 20880

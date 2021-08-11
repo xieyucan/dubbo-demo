@@ -1,12 +1,19 @@
 dubbo:
   metadata-report:
-    address: zookeeper://127.0.0.1:2181
+    address: zookeeper://zk01.soa.internal.weimobdev.com:2181
   config-center:
-    address: zookeeper://127.0.0.1:2181
+    address: zookeeper://zk01.soa.internal.weimobdev.com:2181
     app-name: dubbo-provider
   scan:
     base-packages: com.xh.demo.dubbo
   registry:
-    address: zookeeper://127.0.0.1:2181
+    address: zookeeper://zk01.soa.internal.weimobdev.com:2181
+    check: false
+  protocol:
+    name: dubbo
+    port: 20885
+    threadpool: fixed
+    threads: 500
   consumer:
     timeout: 3000
+    check: false

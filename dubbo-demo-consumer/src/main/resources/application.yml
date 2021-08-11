@@ -4,4 +4,6 @@ server:
 spring:
   application:
     name: dubbo-consumer
-  active: nacos
+  profiles:
+    active: zookeeper
+
